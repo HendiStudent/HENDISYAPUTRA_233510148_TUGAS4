@@ -1,0 +1,57 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: #0f172a;
+    color: #e2e8f0;
+  }
+
+  body {
+    background-color: #1e293b;
+  }
+
+  .card {
+    background-color: #1f2937;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  input,
+  textarea {
+    background-color: #334155;
+    color: #f8fafc;
+    border: 1px solid #475569;
+  }
+
+  input:focus,
+  textarea:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.4);
+  }
+
+  button {
+    color: white;
+  }
+
+  .btn-primary {
+    background-color: #3b82f6;
+  }
+
+  .btn-primary:hover {
+    background-color: #2563eb;
+  }
+
+  .btn-secondary {
+    background-color: #475569;
+  }
+
+  .btn-refresh {
+    background-color: #10b981;
+  }
+
+  .btn-edit {
+    background-color: #facc15;
+    color: #1f2937;
+  }
+
+  .btn-delete {
+    background-color: #ef4444;
+  }
+}
