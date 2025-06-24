@@ -18,7 +18,7 @@ const error = ref('')
 const load = async () => {
   loading.value = true
   try {
-    const res = await axios.get('http://localhost:3000/articles')
+    const res = await axios.get('https://juicy-repeated-venus.glitch.me/articles')
     articles.value = res.data
   } catch (err) {
     error.value = 'Gagal memuat data'
@@ -36,8 +36,8 @@ const save = async () => {
 
   try {
     const url = form.id
-      ? `http://localhost:3000/articles/${form.id}`
-      : 'http://localhost:3000/articles'
+      ? `https://juicy-repeated-venus.glitch.me/articles/${form.id}`
+      : 'https://juicy-repeated-venus.glitch.me/articles'
     const method = form.id ? 'put' : 'post'
     const res = await axios[method](url, {
       title: form.title,
@@ -69,7 +69,7 @@ const edit = (article) => {
 const remove = async (id) => {
   if (!confirm('Yakin ingin menghapus artikel ini?')) return
   try {
-    await axios.delete(`http://localhost:3000/articles/${id}`)
+    await axios.delete(`https://juicy-repeated-venus.glitch.me/articles/${id}`)
     articles.value = articles.value.filter((a) => a.id !== id)
   } catch (err) {
     error.value = 'Gagal menghapus data'
